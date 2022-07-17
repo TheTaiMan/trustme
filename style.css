@@ -11,34 +11,13 @@ html {
 }
 
 body {
-  position: fixed;
+  position: relative;
   display: flex;
   height: 100%;
   width: 100%;
   justify-content: center;
   align-items: center;
   border: 20px solid rgb(0, 0, 0);
-}
-
-#eevee {
-  object-fit: cover;
-  height: 80%;
-  width: 100%;
-}
-
-#pokeball {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-}
-
-#rainbow {
-  z-index: 999;
-  position: fixed;
-  bottom: -10px;
-  right: -50px;
-  width: 200px;
-  height: 200px;
 }
 
 .block {
@@ -89,4 +68,39 @@ body {
 
 .block:after {
   filter: blur(50px);
+}
+
+#eevee {
+  object-fit: cover;
+  height: 80%;
+  width: 100%;
+}
+
+#pokeball {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  bottom: 0;
+}
+
+#rainbow {
+  z-index: 999;
+  position: fixed;
+  bottom: -10px;
+  right: -55px;
+  width: 200px;
+  height: 200px;
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
