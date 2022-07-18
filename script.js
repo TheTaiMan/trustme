@@ -38,13 +38,16 @@ window.addEventListener('resize', () => {
 var audio, music, musicParse;
 const touchMe = () => {
   const hidden = document.getElementsByClassName('hidden');
+  document.getElementById("eevee").src = "https://c.tenor.com/oiH88TdX1dAAAAAd/eevee-dance.gif";
+  document.getElementById("rainbow").src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/18e785a0-0d3f-4348-bce5-a9701073baf7/d8fitlo-63d7acd8-b1dc-4d88-95f2-8ea7022c247a.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE4ZTc4NWEwLTBkM2YtNDM0OC1iY2U1LWE5NzAxMDczYmFmN1wvZDhmaXRsby02M2Q3YWNkOC1iMWRjLTRkODgtOTVmMi04ZWE3MDIyYzI0N2EuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.M9rebvyhqjr7-atRHwDgYxvhsMVabBOYzpdukHkBjGw";
+  document.getElementById("pokeball").src = "https://www.seekpng.com/png/full/972-9725718_jamies-pixel-pokemon-ball-pixel-art-pokeball.png";
+
 
   for (const ele of hidden) {
     ele.classList.remove('hidden');
   }
 
   document.getElementById('rainbow').classList.remove('hidden');
-
   document.getElementsByClassName('container')[0].classList.add('hidden');
 
   (audio = ''),
